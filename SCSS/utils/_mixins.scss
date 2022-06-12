@@ -1,0 +1,39 @@
+ // font-weight: 500;
+ // line-height: 1.14;
+ // letter-spacing: 0.02em;
+
+ //  font-weight: 900;
+ //  font-size: 44px;
+ //  line-height: 1.36;
+ //  letter-spacing: 0.06em;
+
+ @mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
+     font-weight: $fw;
+     font-size: $fs;
+     line-height: $lh;
+     letter-spacing: $ls;
+
+     @if $tt {
+         text-transform: $tt;
+     }
+ }
+
+ // transition: color var(--fast-time) var(--easy-in-out);
+ @mixin transition($property) {
+     $duration: var(--fast-time);
+     $timing-function: var(--easy-in-out);
+
+     transition: $property $duration $timing-function;
+     //  transition-property: $property;
+     //  transition-duration: $duration;
+     //  transition-timing-function: $timing-function;
+ }
+
+ //   @mixin transition($property) {
+ //       $duration: 250ms;
+ //       $timing-function: ease;
+
+ //       transition-property: $property;
+ //       transition-duration: $duration;
+ //       transition-timing-function: $timing-function;
+ //   }

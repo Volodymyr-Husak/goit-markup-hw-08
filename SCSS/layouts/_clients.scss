@@ -1,0 +1,39 @@
+/*==================*/
+/*      CLIENTS */
+/* ================== */
+
+.clients__title {
+    margin-bottom: 50px;
+}
+
+.logo-list {
+    display: flex;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 170px;
+        height: 92px;
+
+
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+
+        fill: var(--grey-cl-icons);
+
+        transition: fill var(--fast-time) var(--easy-in-out),
+            border var(--fast-time) var(--easy-in-out);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid var(--blue-color);
+        fill: var(--blue-color);
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
