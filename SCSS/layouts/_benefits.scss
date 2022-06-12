@@ -47,7 +47,7 @@
 
 // MOBILE =================================================
 .benefits {
-    padding-bottom: 0;
+    // padding-bottom: 0;
 }
 
 .benefits-list {
@@ -79,8 +79,6 @@
         @media screen and (max-width: 767px) {
             // width: 100%;
             margin-bottom: 30px;
-
-            background-color: aqua;
         }
 
         @media screen and (min-width: 768px) {
@@ -89,7 +87,7 @@
             width: calc((100% - 2 * 30px) / 2);
             // max-width: 354px;
             // flex-basis: calc((100%-4*15px)/2);
-            background-color: aqua;
+            // background-color: aqua;
         }
 
         @media screen and (min-width: 1200px) {
