@@ -1,0 +1,41 @@
+.menu-btn {
+    border: 0;
+    background-color: var(--white-color);
+    padding: 0;
+    display: block;
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    .header__cross-icon {
+        display: none;
+    }
+}
+
+.menu-btn.is-open .header__cross-icon {
+    display: block;
+}
+
+.menu-btn.is-open .header__menu-icon {
+    display: none;
+}
+
+.header__menu-icon {
+
+
+    // @media screen and (min-width: 768px) {
+    //     display: none;
+    // }
+}
+
+.header__cross-icon {
+    position: absolute;
+    left: 11px;
+    top: 11px;
+}

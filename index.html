@@ -26,7 +26,7 @@
 
 <body>
     <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <a class="logo header__logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
             <nav class="navigation">
@@ -62,8 +62,32 @@
                     </a>
                 </li>
             </ul>
+            <!-- header-menu -->
+            <button class="btn menu-btn" type="button" aria-label="Меню" data-menu-button>
+                <svg class="header__menu-icon" width="40" height="40">
+                    <use href="./images/icon/sprite.svg#menu"></use>
+                    <!-- <use href="./images/icon/sprite.svg#modal-btn"></use> -->
+                </svg>
+                <svg class="header__cross-icon" width="18" height="18">
+                    <use href="./images/icon/sprite.svg#modal-btn"></use>
+                </svg>
+            </button>
+            <ul class="menu-navigation list">
+                <li class="menu-navigation__item">
+                    <a href="" class="link menu-navigation__link">Студия</a>
+                </li>
+                <li class="menu-navigation__item">
+                    <a href="" class="link menu-navigation__link">Портфолио</a>
+                </li>
+                <li class="menu-navigation__item">
+                    <a href="" class="link menu-navigation__link">Контакты</a>
+                </li>
+            </ul>
+
+
+
         </div>
-    </header> -->
+    </header>
     <main>
         <!-- Герой -->
         <!-- <section class="hero">
@@ -478,6 +502,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

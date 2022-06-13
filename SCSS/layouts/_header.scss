@@ -7,10 +7,20 @@
     &__container {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 480px) {
+            justify-content: space-between;
+        }
     }
 
     &__logo {
-        margin-right: 94px;
+        // margin-right: 94px;
+    }
+}
+
+.navigation {
+    @media screen and (max-width: 480px) {
+        display: none;
     }
 }
 
@@ -95,6 +105,10 @@
 .header__contact {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }
 
 .header__item:not(:last-child) {
