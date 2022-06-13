@@ -185,13 +185,22 @@
 }
 
 .footer-container-address {
+
     // display: flex;
     // flex-wrap: nowrap;
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .footer-list-address {
     margin-top: 20px;
+    margin-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 
     .item:not(:last-child) {
         margin-bottom: 9px;
@@ -208,16 +217,42 @@
 }
 
 .footer-container {
+
     // display: flex;
     // justify-content: space-between;
-
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
 
 }
 
+.footer-container__tablet {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
 .social-networks-footer {
-    margin-top: 12px;
+    // margin-top: 12px;
+    margin-bottom: 60px;
 
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+    }
 }
 
 .footer-title {
@@ -273,8 +308,11 @@
     display: block;
     text-align: center;
 
-    margin-top: 12px;
-    height: 92px;
+    // margin-top: 12px;
+    // height: 92px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+    }
 }
 
 .label-footer {
@@ -288,11 +326,20 @@
     @include fonts(700, inherit, 1.17, inherit, uppercase);
 
     color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        // margin-right: auto;
+        text-align: start;
+        // margin-top: 12px;
+    }
 }
 
 .input-footer {
     width: 100%;
     max-height: 50px;
+    margin-bottom: 20px;
+    max-width: 450px;
 
     border: none;
     outline: 1px solid rgba(255, 255, 255, 0.3);
@@ -300,12 +347,18 @@
     background-color: transparent;
 
     padding: 15px 16px;
-    margin-right: 12px;
+    // margin-right: 12px;
 
     color: var(--link-contact-footer);
 
     font-size: 16px;
     line-height: 1.25;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 
     &::placeholder {
         font-size: 16px;
@@ -352,6 +405,12 @@
 }
 
 .input-btn-form-footer {
+
     // display: flex;
-    max-height: 50px;
+    // max-height: 50px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        height: 50px;
+    }
+
 }
