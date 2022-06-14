@@ -4,9 +4,13 @@
 .header {
     border-bottom: 1px solid var(--brd-bot-header);
 
+
     &__container {
         display: flex;
         align-items: center;
+
+        position: relative;
+        // @include transition(transform);
 
         @media screen and (max-width: 480px) {
             justify-content: space-between;
