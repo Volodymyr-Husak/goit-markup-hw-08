@@ -83,6 +83,8 @@
 .menu-container {
 
     // display: none;
+    // min-width: 250px;
+
     @media screen and (min-width: 480px) {
         display: none;
     }
@@ -93,7 +95,7 @@
     top: 0;
     // left: 0;
 
-    transform: translateX(480px);
+    transform: translateX(-480px);
     // @include transition(transform);
     // overflow: hidden;
 

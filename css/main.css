@@ -678,8 +678,8 @@ img {
 .menu-container {
   position: absolute;
   top: 0;
-  -webkit-transform: translateX(480px);
-          transform: translateX(480px);
+  -webkit-transform: translateX(-480px);
+          transform: translateX(-480px);
   padding: 48px 40px;
   background-color: var(--white-color);
   width: 100vw;
