@@ -45,9 +45,12 @@
 
     background-color: var(--bg-grey-cl);
     // // фонове зображення==========================
+
     // mobile
+
     background-image: url(../images/hero/hero-bg.png),
     url(../images/hero/hero-img_sm.jpg);
+
 
     @media screen and(min-resolution:2dppx) {
         background-image: url(../images/hero/hero-bg.png),
@@ -55,6 +58,7 @@
     }
 
     // tablet
+
     @media screen and(min-width: 768px) {
         background-image: url(../images/hero/hero-bg.png),
             url(../images/hero/hero-img_md.jpg);
@@ -66,6 +70,7 @@
     }
 
     // desktop
+
     @media screen and(min-width: 1200px) {
         background-image: url(../images/hero/hero-bg.png),
             url(../images/hero/hero-img_lg.jpg);
