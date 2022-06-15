@@ -12,20 +12,26 @@
         position: relative;
         // @include transition(transform);
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 1199px) {
             justify-content: space-between;
         }
     }
 
     &__logo {
+
         // margin-right: 94px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 94px;
+        }
     }
 }
 
 .navigation {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
+
+
 }
 
 .navigation__list {
@@ -107,22 +113,42 @@
 }
 
 .header__contact {
-    display: flex;
-    margin-left: auto;
+    // display: flex;
+    // margin-left: auto;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         display: none;
+        // display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
     }
 }
 
+.header__item {
+    // display: flex;
+}
+
 .header__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
+
 }
 
 .header__link {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
 
     // font-weight: 500;
     // line-height: 1.14;

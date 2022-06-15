@@ -480,7 +480,7 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -488,7 +488,13 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 94px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .navigation {
     display: none;
   }
@@ -562,29 +568,38 @@ img {
   opacity: 1;
 }
 
-.header__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header__contact {
     display: none;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
 .header__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   font-size: inherit;
   line-height: 1.14;
@@ -593,6 +608,13 @@ img {
   fill: var(--main-color);
   -webkit-transition: color var(--fast-time) var(--easy-in-out);
   transition: color var(--fast-time) var(--easy-in-out);
+}
+
+@media screen and (min-width: 1200px) {
+  .header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__link:focus, .header__link:hover {
@@ -618,7 +640,7 @@ img {
   transition: fill var(--fast-time) var(--easy-in-out);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
@@ -646,7 +668,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .menu-btn.is-open ~ .menu-container {
     display: block;
     -webkit-transform: translateX(0);
@@ -678,15 +700,15 @@ img {
 .menu-container {
   position: absolute;
   top: 0;
-  -webkit-transform: translateX(-480px);
-          transform: translateX(-480px);
+  -webkit-transform: translateX(-800px);
+          transform: translateX(-800px);
   padding: 48px 40px;
   background-color: var(--white-color);
-  width: 100vw;
+  width: 100%;
   height: 100wv;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: none;
   }
@@ -712,6 +734,10 @@ img {
 
 .menu-navigation__link:hover,
 .menu-navigation__link:focus {
+  color: var(--blue-color);
+}
+
+.menu-navigation__link--current {
   color: var(--blue-color);
 }
 
