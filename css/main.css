@@ -1474,6 +1474,12 @@ img {
   }
 }
 
+@media screen and (max-width: 404px) {
+  .portfolio .item:nth-last-child(-n+3) {
+    margin-top: 15px;
+  }
+}
+
 .portfolio-btn {
   padding: 6px 22px;
   border: 1px solid transparent;

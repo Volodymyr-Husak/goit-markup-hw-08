@@ -27,6 +27,12 @@
         }
     }
 
+    @media screen and (max-width: 404px) {
+        .item:nth-last-child(-n+3) {
+            margin-top: 15px;
+        }
+    }
+
 
 }
 
