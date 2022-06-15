@@ -219,10 +219,6 @@ img {
 }
 
 /* modal-form */
-.modal-form {
-  min-width: 370px;
-}
-
 .input-container {
   display: block;
   position: relative;
@@ -364,6 +360,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -707,6 +705,7 @@ img {
 }
 
 .menu-container {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -715,7 +714,6 @@ img {
           transform: translateX(-800px);
   padding: 48px 40px;
   background-color: var(--white-color);
-  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {

@@ -89,6 +89,9 @@
 
     // display: none;
     // min-width: 250px;
+    width: 100%;
+    // margin-right: auto;
+    // margin-left: auto;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -98,6 +101,7 @@
     // position: fixed;
     position: absolute;
     top: 0;
+    // left: -15px;
     left: 0;
 
     z-index: 9;
@@ -111,7 +115,7 @@
 
     background-color: var(--white-color);
     // width: 100%;
-    min-width: 480px;
+    // min-width: 480px;
     // min-width:767px;
     // height: 100wv;
     // height: 100wv;
@@ -131,6 +135,7 @@
 
 .menu-navigation__item:not(:last-child) {
     margin-bottom: 32px;
+
 }
 
 .menu-navigation__link {

@@ -93,7 +93,7 @@
 /* modal-form */
 .modal-form {
     // margin-top: 40px;
-    min-width: 370px;
+    // min-width: 320px;
 }
 
 .input-container {
@@ -241,6 +241,7 @@
 /* Політика приватності (чекбокс) */
 .form-policy-group {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
