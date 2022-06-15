@@ -54,7 +54,7 @@
 
     @media screen and(min-resolution:2dppx) {
         background-image: url(../images/hero/hero-bg.png),
-            url(../images/hero/hero-img_sm2x.jpg);
+            url(../images/hero/hero-img_sm@2x.jpg);
     }
 
     // tablet
@@ -65,7 +65,7 @@
 
         @media screen and(min-resolution:2dppx) {
             background-image: url(../images/hero/hero-bg.png),
-                url(../images/hero/hero-img_md2x.jpg);
+                url(../images/hero/hero-img_md@2x.jpg);
         }
     }
 
@@ -77,7 +77,7 @@
 
         @media screen and(min-resolution:2dppx) {
             background-image: url(../images/hero/hero-bg.png),
-                url(../images/hero/hero-img_lg2x.jpg);
+                url(../images/hero/hero-img_lg@2x.jpg);
         }
     }
 }
