@@ -816,7 +816,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--bg-grey-cl);
-  background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img.png);
+  background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_sm.jpg);
 }
 
 .hero__container {
@@ -840,6 +840,36 @@ img {
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_sm2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_md.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_md2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_lg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg.png), url(../images/hero/hero-img_lg2x.jpg);
   }
 }
 

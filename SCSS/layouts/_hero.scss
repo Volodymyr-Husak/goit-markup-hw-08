@@ -14,10 +14,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: var(--bg-grey-cl);
-    background-image: url(../images/hero/hero-bg.png),
-        url(../images/hero/hero-img.png);
-
     &__container {
         text-align: center;
     }
@@ -45,6 +41,39 @@
         }
 
         color: var(--white-color);
+    }
+
+    background-color: var(--bg-grey-cl);
+    // // фонове зображення==========================
+    // mobile
+    background-image: url(../images/hero/hero-bg.png),
+    url(../images/hero/hero-img_sm.jpg);
+
+    @media screen and(min-resolution:2dppx) {
+        background-image: url(../images/hero/hero-bg.png),
+            url(../images/hero/hero-img_sm2x.jpg);
+    }
+
+    // tablet
+    @media screen and(min-width: 768px) {
+        background-image: url(../images/hero/hero-bg.png),
+            url(../images/hero/hero-img_md.jpg);
+
+        @media screen and(min-resolution:2dppx) {
+            background-image: url(../images/hero/hero-bg.png),
+                url(../images/hero/hero-img_md2x.jpg);
+        }
+    }
+
+    // desktop
+    @media screen and(min-width: 1200px) {
+        background-image: url(../images/hero/hero-bg.png),
+            url(../images/hero/hero-img_lg.jpg);
+
+        @media screen and(min-resolution:2dppx) {
+            background-image: url(../images/hero/hero-bg.png),
+                url(../images/hero/hero-img_lg2x.jpg);
+        }
     }
 }
 
