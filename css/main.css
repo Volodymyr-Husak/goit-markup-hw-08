@@ -710,6 +710,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 9;
   -webkit-transform: translateX(-800px);
           transform: translateX(-800px);
   padding: 48px 40px;
