@@ -32,8 +32,6 @@
             margin-top: 15px;
         }
     }
-
-
 }
 
 .portfolio-btn {
@@ -105,7 +103,7 @@
     margin: 15px;
 
     background-color: var(--white-color);
-    background-color: aqua;
+    // background-color: aqua;
     // transition: box-shadow var(--fast-time) var(--easy-in-out);
     @include transition(box-shadow);
 

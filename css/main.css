@@ -66,6 +66,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .btn {
   font-family: inherit;
   cursor: pointer;
@@ -80,22 +87,15 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
-    width: 480px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin-bottom: 60px;
+    max-width: 480px;
   }
 }
 
@@ -121,7 +121,8 @@ p {
   margin: 0;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
   height: auto;
@@ -750,8 +751,7 @@ img {
   transition: color var(--fast-time) var(--easy-in-out);
 }
 
-.menu-navigation__link:hover,
-.menu-navigation__link:focus {
+.menu-navigation__link:hover, .menu-navigation__link:focus {
   color: var(--blue-color);
 }
 
@@ -775,7 +775,7 @@ img {
   color: var(--blue-color);
 }
 
-.menu-navigation__link--mail {
+.menu-contact__link--mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -791,13 +791,13 @@ img {
       flex-wrap: wrap;
 }
 
+.menu-socials__item {
+  padding-left: 10px;
+}
+
 .menu-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
-}
-
-.menu-socials__item {
-  padding-left: 10px;
 }
 
 .menu-socials__item:first-child {
@@ -907,6 +907,10 @@ img {
 /* ================== */
 /*     BENEFITS */
 /* ================== */
+.benefits {
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: -webkit-box;
@@ -1388,10 +1392,8 @@ img {
 }
 
 .input-footer {
-  width: 100%;
   max-height: 50px;
   margin-bottom: 20px;
-  max-width: 450px;
   border: none;
   outline: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1400,6 +1402,18 @@ img {
   color: var(--link-contact-footer);
   font-size: 16px;
   line-height: 1.25;
+}
+
+@media screen and (max-width: 767px) {
+  .input-footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .input-footer {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1580,7 +1594,6 @@ img {
   border: 1px solid var(--brd-cl-portfolio-fig);
   margin: 15px;
   background-color: var(--white-color);
-  background-color: aqua;
   -webkit-transition: -webkit-box-shadow var(--fast-time) var(--easy-in-out);
   transition: -webkit-box-shadow var(--fast-time) var(--easy-in-out);
   transition: box-shadow var(--fast-time) var(--easy-in-out);
