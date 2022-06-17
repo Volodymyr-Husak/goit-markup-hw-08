@@ -27,7 +27,7 @@
 }
 
 .navigation {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
@@ -116,7 +116,7 @@
     // display: flex;
     // margin-left: auto;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
         // display: block;
     }
