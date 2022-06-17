@@ -45,7 +45,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: auto;
+    // width: auto;
+    @media screen and (max-width: 479px) {
+        min-width: 375px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        min-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+
     height: auto;
 
     padding: 40px;
@@ -53,16 +65,14 @@
     background-color: var(--white-color);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transition: transform var(--fast-time) var(--easy-in-out),
-        opacity var(--fast-time) var(--easy-in-out);
+    opacity var(--fast-time) var(--easy-in-out);
 
-    @media screen and (min-width: 1200px) {
-        width: 528px;
-    }
+
 }
 
 .modal-btn {

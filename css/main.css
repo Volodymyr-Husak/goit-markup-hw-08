@@ -183,7 +183,6 @@ picture {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: auto;
   height: auto;
   padding: 40px;
   background-color: var(--white-color);
@@ -194,6 +193,18 @@ picture {
   transition: opacity var(--fast-time) var(--easy-in-out), -webkit-transform var(--fast-time) var(--easy-in-out);
   transition: transform var(--fast-time) var(--easy-in-out), opacity var(--fast-time) var(--easy-in-out);
   transition: transform var(--fast-time) var(--easy-in-out), opacity var(--fast-time) var(--easy-in-out), -webkit-transform var(--fast-time) var(--easy-in-out);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-wrapper {
+    min-width: 375px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-wrapper {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
