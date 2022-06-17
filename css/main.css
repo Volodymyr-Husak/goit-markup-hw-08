@@ -87,7 +87,6 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -919,8 +918,10 @@ picture {
 /* ================== */
 /*     BENEFITS */
 /* ================== */
-.benefits {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1070,10 +1071,6 @@ picture {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-.list-team .item {
-  outline: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
@@ -1628,7 +1625,6 @@ picture {
 
 .portfolio-item {
   position: relative;
-  outline: 1px solid red;
   border: 1px solid var(--brd-cl-portfolio-fig);
   background-color: var(--white-color);
   -webkit-transition: -webkit-box-shadow var(--fast-time) var(--easy-in-out);
