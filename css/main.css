@@ -87,19 +87,21 @@ body {
 }
 
 .container {
+  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -1587,6 +1589,7 @@ picture {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-item {
@@ -1606,16 +1609,21 @@ picture {
   }
 }
 
-.portfolio-item:hover, .portfolio-item:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: 370px;
+  }
+  .portfolio-item:hover, .portfolio-item:focus {
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.portfolio-figure {
+.portfolio-item .portfolio-figure {
   margin: 0;
 }
 
-.title-cards {
+.portfolio-item .title-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1627,7 +1635,7 @@ picture {
   color: var(--title-color);
 }
 
-.text-cards {
+.portfolio-item .text-cards {
   font-weight: inherit;
   font-size: 16px;
   line-height: 1.88;
@@ -1635,7 +1643,7 @@ picture {
   color: var(--main-color);
 }
 
-.img-portfolio-description {
+.portfolio-item .img-portfolio-description {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1648,7 +1656,7 @@ picture {
           align-items: center;
   padding-left: 24px;
   padding-right: 24px;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform var(--fast-time) var(--easy-in-out);
   transition: -webkit-transform var(--fast-time) var(--easy-in-out);
@@ -1662,13 +1670,13 @@ picture {
   color: var(--white-color);
 }
 
-.portfolio-item .link:hover .img-portfolio-description,
-.portfolio-item .link:focus .img-portfolio-description {
+.portfolio-item .portfolio-item .link:hover .img-portfolio-description,
+.portfolio-item .portfolio-item .link:focus .img-portfolio-description {
   -webkit-transform: translateY(-294px);
           transform: translateY(-294px);
 }
 
-.img-cont-portfolio {
+.portfolio-item .img-cont-portfolio {
   position: relative;
   overflow: hidden;
 }
